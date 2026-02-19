@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fallen Shop</title>
+
+  <style>
+    :root {
+      --bg: #9fc7a8;
+      --card: rgba(255, 255, 255, 0.25);
+      --btn: rgba(255, 255, 255, 0.55);
+      --btn-hover: rgba(255, 255, 255, 0.75);
+      --text: #ffffff;
+      --text-dark: #1b1b1b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      padding: 28px 14px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Foto */
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 4px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Título */
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 2px;
+      color: var(--text);
+      font-weight: 300;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* Subtítulo */
+    .subtitle {
+      margin: -8px 0 6px;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* Seção */
+    .section-title {
+      margin: 10px 0 -6px;
+      color: rgba(255, 255, 255, 0.95);
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+    }
+
+    /* Botões */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    a.link {
+      width: 100%;
+      height: 56px;
+      border-radius: 999px;
+      background: var(--btn);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 0 18px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 18px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      transition: 0.2s;
+      backdrop-filter: blur(8px);
+    }
+
+    a.link:hover {
+      transform: translateY(-2px);
+      background: var(--btn-hover);
+    }
+
+    /* Ícone */
+    .icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.5);
+      flex-shrink: 0;
+    }
+
+    .icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Rodapé */
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
+      text-align: center;
+    }
+
+    /* Responsivo */
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      a.link {
+        height: 54px;
+        font-size: 16px;
+      }
+
+      .avatar {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="avatar">
+      <img src="lewis hamilton icon.jpg" alt="Foto" />
+    </div>
+
+    <h1>FALLEN SHOP</h1>
+    <div class="subtitle">promoções e achados todo dia</div>
+
+    <div class="links">
+      <a class="link" href="SEU_LINK_DA_VITRINE" target="_blank">
+        <div class="icon">
+          <!-- ícone loja -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l1-5h16l1 5" />
+            <path d="M5 9v11h14V9" />
+            <path d="M9 20v-7h6v7" />
+          </svg>
+        </div>
+        vitrine de afiliado
+      </a>
+    </div>
+
+    <div class="section-title">categorias</div>
+
+    <div class="links">
+      <a class="link" href="LINK_GAMER" target="_blank">
+        <div class="icon">
+          <!-- ícone controle -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 12h12" />
+            <path d="M8 8l-2 4 2 4" />
+            <path d="M16 8l2 4-2 4" />
+            <path d="M7 16h.01" />
+            <path d="M17 16h.01" />
+          </svg>
+        </div>
+        gamer
+      </a>
+
+      <a class="link" href="LINK_CASA" target="_blank">
+        <div class="icon">
+          <!-- ícone sacola -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 7l1-3h10l1 3" />
+            <path d="M5 7h14l-1 14H6L5 7z" />
+            <path d="M9 10v2a3 3 0 006 0v-2" />
+          </svg>
+        </div>
+        casa
+      </a>
+
+      <a class="link" href="LINK_ACESSORIOS" target="_blank">
+        <div class="icon">
+          <!-- ícone fone -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 12a8 8 0 0116 0" />
+            <path d="M4 12v6a2 2 0 002 2h1v-8H6a2 2 0 00-2 2z" />
+            <path d="M20 12v6a2 2 0 01-2 2h-1v-8h1a2 2 0 012 2z" />
+          </svg>
+        </div>
+        acessórios
+      </a>
+
+      <a class="link" href="LINK_CELULAR" target="_blank">
+        <div class="icon">
+          <!-- ícone celular -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="7" y="2" width="10" height="20" rx="2" />
+            <path d="M11 18h2" />
+          </svg>
+        </div>
+        celular
+      </a>
+    </div>
+
+    <div class="section-title">tiktok secundário</div>
+
+    <div class="links">
+      <a class="link" href="LINK_TIKTOK" target="_blank">
+        <div class="icon">
+          <!-- ícone play -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 5v14l11-7L8 5z" />
+          </svg>
+        </div>
+        tiktok.com
+      </a>
+    </div>
+
+    <div class="footer">
+      © Fallen Shop • links seguros
+    </div>
+
+  </div>
+</body>
+
+</html>
